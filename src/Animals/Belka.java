@@ -2,8 +2,8 @@ package Animals;
 
 public class Belka extends Herbivore {
 
-    public Belka(){
-        this.animalName="Belka";
+    public Belka() {
+        this.animalName = "Belka";
     }
 
 }

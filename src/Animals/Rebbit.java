@@ -3,11 +3,11 @@ package Animals;
 
 public class Rebbit extends Herbivore {
 
-    public Rebbit(){
-        this.animalName="Rebbit";
+    public Rebbit() {
+        this.animalName = "Rebbit";
     }
 
-    }
+}
 
 
 

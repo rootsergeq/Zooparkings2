@@ -7,7 +7,7 @@ public abstract class Food {
     String foodName;
     String foodType;
 
-    Food(){
+    Food() {
 
     }
 

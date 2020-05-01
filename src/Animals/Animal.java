@@ -1,7 +1,6 @@
 package Animals;
 
 import Foods.Food;
-import Foods.VegatarianFood;
 
 import java.util.Objects;
 
@@ -10,8 +9,12 @@ public abstract class Animal {
     String animalName;
     String animalType;
 
-    Animal(){
+    Animal() {
 
+    }
+
+    public String getName() {
+        return this.animalName;
     }
 
     @Override
@@ -25,5 +28,13 @@ public abstract class Animal {
     @Override
     public int hashCode() {
         return Objects.hash(animalType);
+    }
+
+    public void eating(Food food) {
+        if (food.equals("Meat") && this.animalType.equals("Cornivorous") || food.equals("Grass") && this.animalType.equals("Herbivore")) {
+            System.out.println("Мм вкусно");
+        } else {
+            System.out.println("я тебя сейчас сожру");
+        }
     }
 }
